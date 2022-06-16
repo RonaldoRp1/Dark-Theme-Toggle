@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="Pt-Br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Theme</title>
+    <title>Login- Controlde de Gastos</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="script.js"></script>
 </head>
 <body>
-    <div>
-        <input type="checkbox" class="checkbox" id="chk" />
-        <label class="label" for="chk">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-          <div class="ball"></div>
-        </label>
-      </div>
-    
+    <form>
+        <div>
+            <div><label>Email</label></div>
+            <input type="email" name="email" id="email" onchange="validateFields()" placeholder="seu@email.com">
+        </div>
 
-    <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+        <div>
+            <div><label>Senha</label></div>
+            <input type="passoword" name="password" id="password" onchange="validadeFields()" placeholder="senha"></input>
+        </div>
+
+        <div>
+            <button type="button" class="clear" id="recover-password-button" disabled="true">Recuperar Senha</button>
+        </div>
+
+        <div>
+            <button type="button" class="solid" id="login-button" disabled="true" >Entrar</button>
+        </div>
+
+        <div>
+            <button type="button" class="outline">Registrar</button>
+        </div>   
+    </form>    
 </body>
 </html>
